@@ -45,12 +45,12 @@ Spacing System (px):
 
 html {
 	/* font-size: 10px; */
-	/* (10px / 16px) = 0.625 = 62.5% */
+	/* NOTE: (10px / 16px) = 0.625 = 62.5% */
 	font-size: 62.5%;
 }
 
 body {
-	font-family: sans-serif;
+	font-family: "Rubik", sans-serif;
 	line-height: 1;
 	font-weight: 400;
 	color: #555;
@@ -90,7 +90,7 @@ body {
 	margin-bottom: 4.8rem;
 }
 
-/* Since its not a button but <a> tag link elements we got to define these pseudo class conditions */
+/* NOTE: Since its not a button but <a> tag link elements we got to define these link & visited pseudo class conditions */
 .btn:link,
 .btn:visited {
 	display: inline-block;
@@ -102,7 +102,7 @@ body {
 	cursor: pointer;
 
 	/* transition: all 0.5s; */
-	/* We get to either choose all or specific property to animate transition */
+	/* NOTE: We get to either choose all or specific property to animate transition */
 	transition: background-color 0.3s;
 }
 
@@ -128,7 +128,7 @@ body {
 	background-color: #fdf2e9;
 	/* border: 3px solid #e67e22; */
 	/* border needs to be inside. Outside border pushes items */
-	/* Trick to add border inside */
+	/* NOTE: Trick to add border inside without disturbance*/
 	box-shadow: inset 0 0 0 3px #fff;
 }
 
@@ -139,5 +139,5 @@ body {
 
 .margin-right-sm {
 	margin-right: 1.6rem !important;
-	/* !important is added just to make sure it is not overriden by specificity */
+	/* NOTE: !important is added just to make sure it is not overriden by specificity */
 }
