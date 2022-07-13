@@ -9,17 +9,18 @@ Font sizes (px):
 
 - Line Heights:
 Default: 1
-
+Headline: 1.05
+Description: 1.6
 
 --- 02 COLORS
 
 - Primary: #e67e22
-- Tints:
+- Tints: #fdf2e9
 - Shades:
 - Accents:
 - Greys:
 #555
-
+#333
 
 --- 03 SHADOWS
 
@@ -56,6 +57,11 @@ body {
 }
 /* global defaults */
 
+.section-hero {
+	background-color: #fdf2e9;
+	padding: 9.6rem 0;
+}
+
 .hero {
 	/* width: 1300px; */
 	max-width: 130rem;
@@ -64,9 +70,74 @@ body {
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	column-gap: 9.6rem;
+	align-items: center;
+}
+
+.heading-primary {
+	/* font-size: 52px; */
+	font-size: 5.2rem;
+	font-weight: 700;
+	line-height: 1.05;
+	color: #333;
+	letter-spacing: -0.5px;
+	margin-bottom: 3.2rem;
+}
+
+.hero-description {
+	font-size: 2rem;
+	line-height: 1.6;
+	margin-bottom: 4.8rem;
+}
+
+/* Since its not a button but <a> tag link elements we got to define these pseudo class conditions */
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	/* This inline elements shall get display: inline-block for proper width and sizing */
+	font-size: 2rem;
+	padding: 1.6rem 3.2rem;
+	text-decoration: none;
+	border-radius: 0.9rem;
+	cursor: pointer;
+
+	/* transition: all 0.5s; */
+	/* We get to either choose all or specific property to animate transition */
+	transition: background-color 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+	background-color: #e67e22;
+	color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+	background-color: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+	background-color: #fff;
+	color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+	background-color: #fdf2e9;
+	/* border: 3px solid #e67e22; */
+	/* border needs to be inside. Outside border pushes items */
+	/* Trick to add border inside */
+	box-shadow: inset 0 0 0 3px #fff;
 }
 
 .hero-img {
 	width: 100%;
 	/* 100% means it would fill hero-img-box container in full */
+}
+
+.margin-right-sm {
+	margin-right: 1.6rem !important;
+	/* !important is added just to make sure it is not overriden by specificity */
 }
