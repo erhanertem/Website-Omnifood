@@ -24,7 +24,7 @@ Paragrapgh default: 1.6
 --- 02 COLORS
 
 - Primary: #e67e22
-- Tints: #fdf2e9
+- Tints: #fdf2e9 #fae5d3
 - Shades: #cf711f
 - Accents:
 - Greys:
@@ -182,14 +182,48 @@ Spacing System (px):
 }
 
 .step-img-box {
+	position: relative;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	/* align the phone img to center */
 }
 
+.step-img-box::after,
+.step-img-box::before {
+	content: "";
+	display: block;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	border-radius: 50%;
+}
+
+.step-img-box::before {
+	width: 60%;
+	/* height: 60%; */
+	/* this does not work as it collapses to none */
+	/* this is the trick that makes it work setting padding-bottom to issue an height for the element */
+	padding-bottom: 60%;
+	background-color: #fdf2e9;
+
+	z-index: -2;
+	/* NOTE: draw shape below the image */
+}
+
+.step-img-box::after {
+	width: 50%;
+	padding-bottom: 50%;
+	background-color: #fae5d3;
+	z-index: -1;
+}
+
 .step-img {
-	width: 35%;
+	width: 40%;
 	/* allocates 50% of the step-img-box container */
 }
 
