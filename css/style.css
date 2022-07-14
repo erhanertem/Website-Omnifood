@@ -269,3 +269,34 @@ Spacing System (px):
 	font-size: 1.8rem;
 	line-height: 1.8;
 }
+
+/* *************************** */
+/* MEALS SECTION               */
+/* *************************** */
+
+.section-meals {
+	padding: 9.6rem 0;
+}
+
+.meal-title {
+	font-size: 2.4rem;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 2.4rem;
+}
+
+.meal-attributes {
+	list-style: none;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.meal-attribute {
+	font-size: 1.8rem;
+}
+
+.meal-img {
+	width: 100%;
+}
