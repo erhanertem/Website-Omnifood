@@ -282,3 +282,8 @@ body {
 .section-how {
 	padding: 9.6rem 0;
 }
+
+.step-img {
+	width: 50%;
+	/* allocates 50% of the step-img-box container */
+}
