@@ -23,11 +23,16 @@ Paragrapgh default: 1.6
 
 --- 02 COLORS
 
-- Primary: #e67e22
-- Tints: #fdf2e9 #fae5d3
-- Shades: #cf711f
+- Primary: 
+#e67e22
+- Tints: 
+#fdf2e9 
+#fae5d3
+- Shades: 
+#cf711f
 - Accents:
 - Greys:
+#6f6f6f
 #555
 #333
 
@@ -392,18 +397,25 @@ Spacing System (px):
 /* *************************** */
 
 .section-testimonials {
-	padding: 9.6rem 0;
+	background-color: #fdf2e9;
+
+	display: grid;
+	grid-template-columns: 55fr 45fr;
+}
+
+.testimonials-container {
+	padding: 9.6rem;
 }
 
 .testimonials {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 4.8rem;
+	row-gap: 4.8rem;
+	column-gap: 8rem;
 }
 
 .testimonial-img {
 	width: 6.4rem;
-	height: 6.4rem;
 	border-radius: 50%;
 	margin-bottom: 1.2rem;
 }
@@ -416,5 +428,29 @@ Spacing System (px):
 
 .testimonial-name {
 	font-size: 1.6rem;
-	color: #777;
+	color: #6f6f6f;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.6rem;
+	padding: 1.6rem;
+}
+
+.gallery-item {
+	overflow: hidden;
+	/* NOTE: image enclosed by figure element is overflow hidden along figure boundry so image scaling is cut all around */
+}
+
+.gallery-item img {
+	display: block;
+	/* NOTE: img are inline elements in order to dismiss gap between them display block needs to be employed */
+	width: 100%;
+
+	transition: all 0.3s;
+}
+
+.gallery-item img:hover {
+	transform: scale(1.05);
 }
