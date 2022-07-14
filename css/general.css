@@ -114,6 +114,10 @@ strong {
 	font-weight: 500;
 }
 
+.margin-bottom-md {
+	margin-bottom: 4.8rem !important;
+}
+
 .container {
 	/* 1140px is the another standard as well */
 	max-width: 120rem;
@@ -142,4 +146,18 @@ strong {
 
 .grid--4-cols {
 	grid-template-columns: repeat(4, 1fr);
+}
+
+.link:link,
+.link:visited {
+	display: inline-block;
+	color: #e67e22;
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 2px;
+}
+
+.link:hover,
+.link:active {
+	border-bottom: 1px solid transparent;
 }
