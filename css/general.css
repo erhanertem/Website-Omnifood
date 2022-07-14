@@ -171,6 +171,10 @@ body {
 	color: #e67e22;
 }
 
+.list-icon.list-icon--ghost {
+	color: white;
+}
+
 /* *************************** */
 /* HELPER CLASSES              */
 /* *************************** */

@@ -443,14 +443,36 @@ Spacing System (px):
 
 .pricing-plan {
 	border-radius: 11px;
-	background-color: #fdf2e9;
-	padding: 4.8rem;
 	width: 75%;
 }
 
-.pricing-plan:nth-child(1) {
+.pricing-plan--starter {
 	justify-self: end;
-	/* justify item on the first column of the grid to the middle spacing */
+	border: 2px solid #fdf2e9;
+	padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+	background-color: #fdf2e9;
+	padding: 4.8rem;
+	overflow: hidden;
+
+	position: relative;
+}
+
+.pricing-plan--complete:after {
+	content: "Best value";
+	text-transform: uppercase;
+	background-color: #ffd43b;
+	color: #333;
+	padding: 0.8rem 4.8rem;
+	font-weight: 700;
+	font-size: 1.4rem;
+	transform: rotate(45deg);
+
+	position: absolute;
+	top: 6%;
+	right: -11%;
 }
 
 .plan-header {
