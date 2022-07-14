@@ -283,6 +283,14 @@ Spacing System (px):
 	overflow: hidden;
 	/* NOTE: whatever flows should be hidden */
 	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+	transition: all 0.3s;
+	/* Compliments to meal:hover effect below */
+}
+
+.meal:hover {
+	transform: translateY(-1rem);
+
+	box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
 }
 
 .meal-content {
