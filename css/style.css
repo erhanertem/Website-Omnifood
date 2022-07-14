@@ -181,8 +181,15 @@ Spacing System (px):
 	padding: 9.6rem 0;
 }
 
+.step-img-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* align the phone img to center */
+}
+
 .step-img {
-	width: 50%;
+	width: 35%;
 	/* allocates 50% of the step-img-box container */
 }
 
@@ -191,4 +198,9 @@ Spacing System (px):
 	font-weight: 600;
 	color: #ddd;
 	margin-bottom: 1.2rem;
+}
+
+.step-description {
+	font-size: 1.8rem;
+	line-height: 1.8;
 }
