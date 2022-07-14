@@ -278,6 +278,32 @@ Spacing System (px):
 	padding: 9.6rem 0;
 }
 
+.meal {
+	border-radius: 11px;
+	overflow: hidden;
+	/* NOTE: whatever flows should be hidden */
+	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.meal-content {
+	padding: 3rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+	margin-bottom: 1.2rem;
+}
+
+.tag {
+	display: inline-block;
+	padding: 0.4rem 0.8rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color: #51cf66;
+	color: #333;
+	border-radius: 1000px;
+}
+
 .meal-title {
 	font-size: 2.4rem;
 	color: #333;
@@ -295,6 +321,17 @@ Spacing System (px):
 
 .meal-attribute {
 	font-size: 1.8rem;
+
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.meal-icon {
+	height: 2.4rem;
+	width: 2.4rem;
+	color: #cf711f;
+	/* stroke does not work actually for the iconicons sets */
 }
 
 .meal-img {

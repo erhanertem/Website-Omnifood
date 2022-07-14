@@ -110,6 +110,10 @@ body {
 	/* NOTE: !important is added just to make sure it is not overriden by specificity */
 }
 
+strong {
+	font-weight: 500;
+}
+
 .container {
 	/* 1140px is the another standard as well */
 	max-width: 120rem;
