@@ -585,8 +585,8 @@ Spacing System (px):
 .cta-img-box {
 	background-image: linear-gradient(
 			to right bottom,
-			rgba(235, 151, 78, 0.3),
-			rgba(230, 125, 34, 0.3)
+			rgba(235, 151, 78, 0.4),
+			rgba(230, 125, 34, 0.4)
 		),
 		url("../img/eating.jpg");
 	background-size: cover;
