@@ -82,7 +82,7 @@ Spacing System (px):
 
 	display: flex;
 	align-items: center;
-	gap: 3.2rem;
+	gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -388,6 +388,8 @@ Spacing System (px):
 
 .testimonials-container {
 	padding: 9.6rem;
+
+	align-self: center;
 }
 
 .testimonials {
