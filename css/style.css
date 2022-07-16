@@ -640,3 +640,11 @@ Spacing System (px):
 	outline-offset: 1px; */
 	box-shadow: inset 0 0 0 0.3rem rgb(253, 242, 233, 0.5);
 }
+
+/* *************************** */
+/* FOOTER SECTION              */
+/* *************************** */
+
+.footer {
+	padding: 9.6rem 0;
+}
