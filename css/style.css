@@ -28,16 +28,21 @@ Paragrapgh default: 1.6
 - Tints: 
 #fdf2e9 
 #fae5d3
+#eb984e
 - Shades: 
 #cf711f
+#45260a
 - Accents:
 - Greys:
+#888
+#767676
 #6f6f6f
 #555
 #333
 
 --- 03 SHADOWS
 
+0 2.rem 4.8rem rgba(0,0,0,0.075)
 
 --- 04 BORDER-RADIUS
 Default: 9px
@@ -551,7 +556,7 @@ Spacing System (px):
 /* *************************** */
 
 .section-cta {
-	padding: 9.6rem 0;
+	padding: 4.8rem 0 12.8rem 0;
 }
 
 .cta {
@@ -646,5 +651,77 @@ Spacing System (px):
 /* *************************** */
 
 .footer {
-	padding: 9.6rem 0;
+	padding: 12.8rem 0;
+	border-top: 1.5px solid #eee;
+}
+
+.grid--footer {
+	grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-logo {
+	display: block;
+	/* NOTE: due to <a> element being inline-element and use margin property */
+	margin-bottom: 3.2rem;
+}
+
+.social-links {
+	list-style: none;
+	display: flex;
+	gap: 2.4rem;
+}
+
+.social-icon {
+	height: 2.4rem;
+	width: 2.4rem;
+}
+
+.copyright {
+	font-size: 1.4rem;
+	line-height: 1.6;
+	color: #767676;
+	margin-top: auto;
+}
+
+.footer-heading {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-bottom: 4rem;
+}
+
+.contacts {
+	font-style: normal;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6;
+}
+
+.address {
+	margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+	list-style: none;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+	text-decoration: none;
+	font-size: 1.6rem;
+	color: #767676;
+	transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+	color: #555;
 }
