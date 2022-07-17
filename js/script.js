@@ -25,6 +25,7 @@ allLinks.forEach((link) => {
 
 		//Scroll to top
 		if (href === "#")
+			// scrollTo requires a coordinate input - WebAPI
 			window.scrollTo({
 				top: 0,
 				behavior: "smooth",
@@ -34,6 +35,7 @@ allLinks.forEach((link) => {
 		if (href !== "#" && href.startsWith("#")) {
 			const sectionEl = document.querySelector(href);
 			// console.log(sectionEl);
+			// scrollIntoView as we do not know exact position to scroll to instread point the element - WebAPI
 			sectionEl.scrollIntoView({ behavior: "smooth" });
 		}
 
