@@ -126,8 +126,11 @@
 		margin-top: 1.2rem;
 	}
 
+	/* Mobile navigation */
+
 	.btn-mobile-nav {
 		display: block;
+		z-index: 1000;
 	}
 
 	.main-nav {
