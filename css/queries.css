@@ -1,6 +1,6 @@
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 
-/* NOTE: a media query should work in the ranges of every 300px in the ball-park.
+/* NOTE: a media query should work in the ranges of every 200~300px in the ball-park.
  */
 
 /* ************************************ */
@@ -182,5 +182,45 @@
 	.main-nav-link:link,
 	.main-nav-link:visited {
 		font-size: 3rem;
+	}
+}
+
+/* ************************************ */
+/* BELOW 704PX (TABLETS)                */
+/* ************************************ */
+
+/* 704/16px~44m */
+@media (max-width: 44em) {
+	.grid--3-cols,
+	.grid--4-cols {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.diets {
+		grid-column: 1 / -1;
+		justify-self: center;
+	}
+
+	.heading-secondary {
+		margin-bottom: 3.6rem;
+	}
+
+	.pricing-plan {
+		width: 100%;
+	}
+
+	.grid--footer {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	.nav-col {
+		grid-row: 1;
+		grid-column: span 2;
+	}
+
+	.logo-col,
+	.address-col {
+		grid-row: 2;
+		grid-column: span 3;
 	}
 }
