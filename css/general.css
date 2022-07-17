@@ -24,6 +24,8 @@ body {
 	line-height: 1;
 	font-weight: 400;
 	color: #555;
+	/* NOTE: Horizontal slide-in out of the menu disallow scrolling aside fix */
+	overflow-x: hidden;
 }
 /* global defaults */
 
