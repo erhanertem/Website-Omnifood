@@ -60,8 +60,14 @@ Spacing System (px):
 /* *************************** */
 
 .header {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 
 	background-color: #fdf2e9;
@@ -83,7 +89,13 @@ Spacing System (px):
 .main-nav-list {
 	list-style: none;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	gap: 4.8rem;
 }
@@ -96,6 +108,10 @@ Spacing System (px):
 	color: #333;
 	font-weight: 500;
 	font-size: 1.8rem;
+
+	-webkit-transition: all 0.3s;
+
+	-o-transition: all 0.3s;
 
 	transition: all 0.3s;
 }
@@ -147,11 +163,11 @@ Spacing System (px):
 	height: 8rem;
 	padding-top: 0;
 	padding-bottom: 0;
+	-webkit-box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 	box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 
 	background-color: rgba(255, 255, 255, 0.97);
 	z-index: 50000;
-	height: ;
 }
 
 .sticky .section-hero {
@@ -176,7 +192,11 @@ Spacing System (px):
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	-webkit-column-gap: 9.6rem;
+	-moz-column-gap: 9.6rem;
 	column-gap: 9.6rem;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -192,13 +212,19 @@ Spacing System (px):
 }
 
 .delivered-meals {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	gap: 1.6rem;
 	margin-top: 8rem;
 }
 
 .delivered-imgs {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -245,6 +271,7 @@ Spacing System (px):
 
 .logos img {
 	height: 3.2rem;
+	-webkit-filter: brightness(0);
 	filter: brightness(0);
 	/* makes all color black */
 	opacity: 50%;
@@ -252,8 +279,13 @@ Spacing System (px):
 }
 
 .logos {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
 
@@ -268,8 +300,16 @@ Spacing System (px):
 .step-img-box {
 	position: relative;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	/* align the phone img to center */
 }
@@ -282,6 +322,8 @@ Spacing System (px):
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 
 	border-radius: 50%;
@@ -335,13 +377,20 @@ Spacing System (px):
 	border-radius: 11px;
 	overflow: hidden;
 	/* NOTE: whatever flows should be hidden */
+	-webkit-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 	/* Compliments to meal:hover effect below */
 }
 
 .meal:hover {
+	-webkit-transform: translateY(-1rem);
+	-ms-transform: translateY(-1rem);
 	transform: translateY(-1rem);
+
+	-webkit-box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
 
 	box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
 }
@@ -352,6 +401,10 @@ Spacing System (px):
 
 .meal-tags {
 	margin-bottom: 1.2rem;
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
 
 	display: flex;
 	gap: 4px;
@@ -389,7 +442,14 @@ Spacing System (px):
 .meal-attributes {
 	list-style: none;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	gap: 2rem;
 }
@@ -397,7 +457,13 @@ Spacing System (px):
 .meal-attribute {
 	font-size: 1.8rem;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	gap: 1.6rem;
 }
@@ -432,6 +498,8 @@ Spacing System (px):
 .testimonials-container {
 	padding: 9.6rem;
 
+	-ms-flex-item-align: center;
+
 	align-self: center;
 }
 
@@ -439,6 +507,8 @@ Spacing System (px):
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	row-gap: 4.8rem;
+	-webkit-column-gap: 8rem;
+	-moz-column-gap: 8rem;
 	column-gap: 8rem;
 }
 
@@ -476,10 +546,16 @@ Spacing System (px):
 	/* NOTE: img are inline elements in order to dismiss gap between them display block needs to be employed */
 	width: 100%;
 
+	-webkit-transition: all 0.3s;
+
+	-o-transition: all 0.3s;
+
 	transition: all 0.3s;
 }
 
 .gallery-item img:hover {
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
 	transform: scale(1.05);
 }
 
@@ -518,6 +594,8 @@ Spacing System (px):
 	padding: 0.8rem 4.8rem;
 	font-weight: 700;
 	font-size: 1.4rem;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 
 	position: absolute;
@@ -607,8 +685,19 @@ Spacing System (px):
 .cta {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
+	-webkit-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
 	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
 	border-radius: 11px;
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right bottom,
+		from(#eb984e),
+		to(#e67e22)
+	);
+
+	background-image: -o-linear-gradient(left top, #eb984e, #e67e22);
 
 	background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
 	overflow: hidden;
@@ -632,6 +721,20 @@ Spacing System (px):
 }
 
 .cta-img-box {
+	background-image: -webkit-gradient(
+			linear,
+			left top,
+			right bottom,
+			from(rgba(235, 151, 78, 0.4)),
+			to(rgba(230, 125, 34, 0.4))
+		),
+		url("../img/eating.jpg");
+	background-image: -o-linear-gradient(
+			left top,
+			rgba(235, 151, 78, 0.4),
+			rgba(230, 125, 34, 0.4)
+		),
+		url("../img/eating.jpg");
 	background-image: linear-gradient(
 			to right bottom,
 			rgba(235, 151, 78, 0.4),
@@ -645,6 +748,8 @@ Spacing System (px):
 .cta-form {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	-webkit-column-gap: 3.2rem;
+	-moz-column-gap: 3.2rem;
 	column-gap: 3.2rem;
 	row-gap: 2.4rem;
 }
@@ -666,7 +771,24 @@ Spacing System (px):
 	border: none;
 	background-color: #fdf2e9;
 	border-radius: 9px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::-webkit-input-placeholder {
+	color: #aaa;
+}
+
+.cta-form input::-moz-placeholder {
+	color: #aaa;
+}
+
+.cta-form input:-ms-input-placeholder {
+	color: #aaa;
+}
+
+.cta-form input::-ms-input-placeholder {
+	color: #aaa;
 }
 
 .cta-form input::placeholder {
@@ -681,6 +803,7 @@ Spacing System (px):
 	outline: none;
 	/* outline: 2px dotted;
 	outline-offset: 1px; */
+	-webkit-box-shadow: inset 0 0 0 0.3rem rgb(69, 38, 10, 0.5);
 	box-shadow: inset 0 0 0 0.3rem rgb(69, 38, 10, 0.5);
 }
 
@@ -688,6 +811,7 @@ Spacing System (px):
 	outline: none;
 	/* outline: 2px dotted;
 	outline-offset: 1px; */
+	-webkit-box-shadow: inset 0 0 0 0.3rem rgb(253, 242, 233, 0.5);
 	box-shadow: inset 0 0 0 0.3rem rgb(253, 242, 233, 0.5);
 }
 
@@ -705,7 +829,12 @@ Spacing System (px):
 }
 
 .logo-col {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
@@ -717,6 +846,8 @@ Spacing System (px):
 
 .social-links {
 	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 2.4rem;
 }
@@ -753,7 +884,14 @@ Spacing System (px):
 .footer-nav {
 	list-style: none;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	gap: 2.4rem;
 }
@@ -763,6 +901,8 @@ Spacing System (px):
 	text-decoration: none;
 	font-size: 1.6rem;
 	color: #767676;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 

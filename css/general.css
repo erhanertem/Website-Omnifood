@@ -1,14 +1,16 @@
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 *:focus {
 	outline: none;
 	/* outline: 2px dotted;
 	outline-offset: 1px; */
-	box-shadow: inset 0 0 0 0.3rem rgb(230, 126, 34, 0.5);
+	-webkit-box-shadow: inset 0 0 0 0.3rem rgb(230, 126, 34, 0.5);
+	        box-shadow: inset 0 0 0 0.3rem rgb(230, 126, 34, 0.5);
 }
 
 /* global reset */
@@ -96,6 +98,8 @@ body {
 	font-family: inherit;
 
 	/* NOTE: We get to either choose all or specific property to animate transition */
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -122,13 +126,15 @@ body {
 	/* border: 3px solid #e67e22; */
 	/* border needs to be inside. Outside border pushes items */
 	/* NOTE: Trick to add border inside without disturbance*/
-	box-shadow: inset 0 0 0 3px #fff;
+	-webkit-box-shadow: inset 0 0 0 3px #fff;
+	        box-shadow: inset 0 0 0 3px #fff;
 }
 
 .btn--form {
 	background-color: #45260a;
 	color: #fff;
-	align-self: end;
+	-ms-flex-item-align: end;
+	    align-self: end;
 	padding: 1.2rem !important;
 }
 
@@ -148,7 +154,9 @@ body {
 	display: grid;
 
 	row-gap: 9.6rem;
-	column-gap: 6.4rem;
+	-webkit-column-gap: 6.4rem;
+	   -moz-column-gap: 6.4rem;
+	        column-gap: 6.4rem;
 }
 
 .grid:not(:last-child) {
@@ -156,7 +164,9 @@ body {
 }
 
 .grid--center-v {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .grid--2-cols {
@@ -188,8 +198,15 @@ body {
 .list {
 	list-style: none;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	gap: 1.6rem;
 }
 
@@ -197,8 +214,14 @@ body {
 	font-size: 1.8rem;
 	line-height: 1.2;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	gap: 1.6rem;
 }
 
