@@ -44,3 +44,25 @@ allLinks.forEach((link) => {
 			headerEl.classList.toggle("nav-open");
 	});
 });
+
+// Sticky navigation
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+	function (entries) {
+		const ent = entries[0];
+		// console.log(ent);
+		if (!ent.isIntersecting) {
+			document.body.classList.add("sticky");
+			// NOTE: We apply sticky to the body not the header in order to implement margin-top 9.6rem and compansate the loss as sticky menu is removed off the normal flow.
+		}
+	},
+	{
+		// In the viewport
+		root: null,
+		// Appear completly in viewport
+		threshold: 0,
+	},
+);
+obs.observe(sectionHeroEl);
