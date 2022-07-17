@@ -584,6 +584,7 @@
 										id="full-name"
 										type="text"
 										placeholder="John Smith"
+										name="full-name"
 										required
 									/>
 								</div>
@@ -594,13 +595,14 @@
 										id="email"
 										type="email"
 										placeholder="me@example.com"
+										name="email"
 										required
 									/>
 								</div>
 								<!-- NOTE: required is used to force fill-in area -->
 								<div>
 									<label for="select-where">Where did you hear from us?</label>
-									<select id="select-where" required>
+									<select id="select-where" name="select-where" required>
 										<option value="">Please choose one</option>
 										<!-- NOTE: declaring value empty for the first option "please choose one", it is not submitted -->
 										<option value="friends">Friends and family</option>
