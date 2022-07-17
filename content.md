@@ -1,3 +1,5 @@
+PUBLISHED LIVE @ https://omnifood-erhan-ertem.netlify.app/
+
 # Omnifood
 
 ## About Omnifood
