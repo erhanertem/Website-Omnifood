@@ -52,10 +52,13 @@ const sectionHeroEl = document.querySelector(".section-hero");
 const obs = new IntersectionObserver(
 	function (entries) {
 		const ent = entries[0];
-		// console.log(ent);
+		console.log(ent);
 		if (!ent.isIntersecting) {
 			document.body.classList.add("sticky");
 			// NOTE: We apply sticky to the body not the header in order to implement margin-top 9.6rem and compansate the loss as sticky menu is removed off the normal flow.
+		}
+		if (ent.isIntersecting) {
+			document.body.classList.remove("sticky");
 		}
 	},
 	{
@@ -63,6 +66,7 @@ const obs = new IntersectionObserver(
 		root: null,
 		// Appear completly in viewport
 		threshold: 0,
+		rootMargin: "-80px",
 	},
 );
 obs.observe(sectionHeroEl);
