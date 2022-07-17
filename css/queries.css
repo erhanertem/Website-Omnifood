@@ -145,7 +145,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		transition: all 0.3s;
+
+		transition: all 0.5s ease-out;
 
 		/* Hide the navigation */
 		/* NOTE: Hide the elements - display: none is not animatable so we dont use it here */
@@ -159,16 +160,17 @@
 
 	.nav-open .main-nav {
 		/* Show the menu */
+		transform: translateX(0);
 		opacity: 1;
 		pointer-events: auto;
 		visibility: visible;
 	}
 
-	.icon-mobile-nav[name="close-outline"] {
+	.nav-open .icon-mobile-nav[name="close-outline"] {
 		display: block;
 	}
 
-	.icon-mobile-nav[name="menu-outline"] {
+	.nav-open .icon-mobile-nav[name="menu-outline"] {
 		display: none;
 	}
 

@@ -17,6 +17,9 @@ html {
 	/* font-size: 10px; */
 	/* NOTE: (10px / 16px) = 0.625 = 62.5% */
 	font-size: 62.5%;
+
+	/* NOTE: Horizontal slide-in out of the menu disallow scrolling aside fix */
+	overflow-x: hidden;
 }
 
 body {
