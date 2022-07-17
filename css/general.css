@@ -20,6 +20,9 @@ html {
 
 	/* NOTE: Horizontal slide-in out of the menu disallow scrolling aside fix */
 	overflow-x: hidden;
+
+	/* Smooth scrolling implementation via CSS */
+	/* scroll-behavior: smooth; */
 }
 
 body {
