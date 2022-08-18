@@ -1,15 +1,17 @@
-# Udemy Build Responsive Real-World Websites with HTML and CSS by Jonas Schmedtmann
+### 👋 **I am Erhan ERTEM**
 
-## **Objective:** Create Omnifood web page for an imaginary company that sells dietry food subscriptions.
+&emsp;
+
+## Udemy Build Responsive Real-World Websites with HTML and CSS by Jonas Schmedtmann
+
+### **Objective:** Create Omnifood web page for an imaginary company that sells dietry food subscriptions.
 
 - Explore GRID and FLEXBOX principles of CSS
 - Create hero section, nav bar, form components, learn graphical CSS manipulations, establish media queries
 
-### Link to Project &rarr; [Omnifood Project](https://omnifood-erhan-ertem.netlify.app)
+&emsp;
 
----
-
-### **Erhan ERTEM**
+#### Link to Project &rarr; [Omnifood Project](https://omnifood-erhan-ertem.netlify.app)
 
 ---
 
