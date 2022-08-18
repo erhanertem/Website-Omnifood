@@ -5,6 +5,8 @@
 - Explore GRID and FLEXBOX principles of CSS
 - Create hero section, nav bar, form components, learn graphical CSS manipulations, establish media queries
 
+### Link to Project &rarr; [Omnifood Project](https://omnifood-erhan-ertem.netlify.app)
+
 ---
 
 ### **Erhan ERTEM**
